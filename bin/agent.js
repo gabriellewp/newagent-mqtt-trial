@@ -55,7 +55,7 @@ utils.getDeviceId(function (id) {
             logger.info("Starting listeners...");
             udp.listen(agentMessage.handler);
 
-            if (conf.default_connector === 'rest+ws') {
+            if (conf.default_connector === 'mqtt' || conf.default_connector === 'rest+ws') {
                 var ctrl = Control.init(conf, logger, id);
                 ctrl.bind(udp);
             }

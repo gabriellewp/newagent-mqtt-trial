@@ -26,5 +26,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module.exports = {
     REST: require('./rest'),
-    TCP: require('./tcp')
+    TCP: require('./tcp'),
+    MQTT: require('./mqtt')
 };
